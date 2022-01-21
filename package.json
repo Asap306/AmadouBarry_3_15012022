@@ -1,0 +1,22 @@
+{
+  "name": "oh_my_food",
+  "version": "1.0.0",
+  "description": "Projet Oh My food",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Asap306/AmadouBarry_3_15012022.git"
+  },
+  "author": "Barry Amadou",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Asap306/AmadouBarry_3_15012022/issues"
+  },
+  "homepage": "https://github.com/Asap306/AmadouBarry_3_15012022#readme",
+  "devDependencies": {
+    "sass": "^1.49.0"
+  }
+}
