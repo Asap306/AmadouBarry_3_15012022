@@ -18,7 +18,7 @@
         border-radius: 2rem;
         background-image: linear-gradient(to top, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
         transition: 100ms;
-        margin-top: 1rem;
+        margin-top: 1.5rem;
         @include box-shadow.base-shadow;
     }
     & button:hover{

@@ -54,7 +54,7 @@ header {
   border-radius: 2rem;
   background-image: linear-gradient(to top, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
   transition: 100ms;
-  margin-top: 1rem;
+  margin-top: 1.5rem;
   box-shadow: -7px 9px 18px -6px rgba(0, 0, 0, 0.63);
 }
 .explorer button:hover {
@@ -62,25 +62,48 @@ header {
   opacity: 0.9;
 }
 
+.tuto {
+  counter-reset: steps;
+}
 .tuto ol {
   display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
+  gap: 2rem;
 }
-@media (max-width: 797px) {
+@media (max-width: 944px) {
   .tuto ol {
     flex-direction: column;
   }
 }
 .tuto li {
+  position: relative;
+  list-style-type: none;
   background-color: #f6f6f6;
-  padding: 1rem 2rem;
+  padding: 1.2rem 2rem;
   flex-grow: 1;
   border-radius: 1rem;
   box-shadow: -7px 9px 18px -6px rgba(0, 0, 0, 0.63);
 }
+.tuto li::before {
+  content: counter(steps);
+  counter-increment: steps;
+  color: white;
+  background-color: #9356dc;
+  width: 2rem;
+  height: 2rem;
+  display: grid;
+  place-items: center;
+  border-radius: 1rem;
+  position: absolute;
+  bottom: 20%;
+  left: -1rem;
+}
 .tuto li:hover {
   transform: scale(1.02);
+}
+.tuto li i.fas {
+  margin-right: 1rem;
+  color: #7e7e7e;
+  font-size: 1.5rem;
 }
 
 /*# sourceMappingURL=style.css.map */
