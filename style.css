@@ -10,7 +10,7 @@ body {
 }
 
 main {
-  padding: 0 1rem;
+  padding: 0;
 }
 
 header {
@@ -64,6 +64,10 @@ header {
 
 .tuto {
   counter-reset: steps;
+  margin-bottom: 2rem;
+}
+.tuto h2 {
+  padding: 2rem 0 0 2rem;
 }
 .tuto ol {
   display: flex;
@@ -104,6 +108,31 @@ header {
   margin-right: 1rem;
   color: #7e7e7e;
   font-size: 1.5rem;
+}
+
+.menus {
+  padding-bottom: 2rem;
+  background-color: #f6f6f6;
+}
+.menus h2 {
+  padding: 2rem 0 0 2rem;
+}
+.menus .menus__cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin: 2rem;
+}
+@media (max-width: 944px) {
+  .menus .menus__cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.menus .card__image {
+  background-image: url("C:/Users/Amadou/OneDrive/Bureau/Oh_My_Food/images/menu_1.jpg");
+  height: 15rem;
+  background-size: cover;
+  border-radius: 1.5rem;
 }
 
 /*# sourceMappingURL=style.css.map */

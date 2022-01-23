@@ -6,7 +6,11 @@
 $tuto-bullet-height : 1rem;
 
 .tuto{
+    h2{
+        padding: 2rem 0 0 2rem;
+    }
     counter-reset: steps;
+    margin-bottom: 2rem;
     & ol{
         display: flex;
         gap: 2rem;
