@@ -1,6 +1,8 @@
 @use "../utils/variables.scss";
+@use "../utils/colors.scss";
 
 .menus{
+    margin-bottom: 2rem;
     padding-bottom: 2rem;
     background-color: #f6f6f6;
     h2{
@@ -17,16 +19,49 @@
         }
         margin: 2rem;
     }
+
+    .new{
+        border: "";
+        position: relative;
+    }
+
+    .new::before{
+        content: "Nouveau";
+        position: absolute;
+        height: 2rem;
+        width: 5rem;
+        background-color: colors.$color-tertiaire;
+        display: grid;
+        place-items: center;
+        right: 1rem;
+        top: 1rem;
+    }
     
     .card{
 
         &__image{
-            background-image: url("C:/Users/Amadou/OneDrive/Bureau/Oh_My_Food/images/menu_1.jpg");
+
             height: 15rem;
             background-size: cover;
-            border-radius: 1.5rem;
+            border-radius: 1rem 1rem 0 0;
+        }
+        @for $i from 1 through 4 {
+            &__image-#{$i} {
+                background-image: url("C:/Users/Amadou/OneDrive/Bureau/Oh_My_Food/images/menu_#{$i}.jpg");
+            }
+        }
+        &__description{
+            position: relative;
+            h3,p {
+                margin: 0.5rem;
+            }
+        } 
+        i{
+            font-size: 2rem;
+            position: absolute;
+            right: 1rem;
+            top: 20%;
         }
     }
-
 }
 
