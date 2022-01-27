@@ -2,9 +2,9 @@
 @use "../utils/colors.scss";
 
 .menus{
-    margin-bottom: 2rem;
+    margin-bottom: 0;
     padding-bottom: 2rem;
-    background-color: #f6f6f6;
+    background-color: #f3f3f3;
     h2{
         padding: 2rem 0 0 2rem;
 
@@ -56,12 +56,25 @@
                 margin: 0.5rem;
             }
         } 
+        .fas{
+            color: transparent;
+            background-clip: text;
+            -webkit-background-clip: text;
+            opacity: 0;
+            transition: 300ms ease-in-out;
+            background-image: colors.$linear-gradiant2;
+        }
+        &:hover .fas{
+            opacity: 1;
+            transform: scale(0.9);
+        }
         i{
             font-size: 2rem;
             position: absolute;
             right: 1rem;
             top: 20%;
         }
+        
     }
 }
 
