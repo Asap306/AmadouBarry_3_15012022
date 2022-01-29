@@ -11,16 +11,7 @@
         font-size: 1.5rem;
     }
     & button{
-        color: white;
-        font-weight: bold;
-        font-size: 1.5rem;
-        padding: 1rem 2rem;
-        border: none;
-        border-radius: 2rem;
-        background-image: colors.$linear-gradiant;
-        transition: 100ms;
-        margin-top: 1.5rem;
-        @include mixins.base-shadow;
+        @include mixins.base-button;
     }
     & button:hover{
         transform: scale(1.09);

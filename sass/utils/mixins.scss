@@ -1,7 +1,64 @@
-@mixin base-shadow {
-    box-shadow: -7px 9px 18px -6px rgba(0,0,0,0.63)
+@use "./colors.scss";
+
+@mixin box-shadow {
+    box-shadow: 1px 1px 8px -2px rgba(0,0,0,0.4)
 }
 
 @mixin zoom {
     transform: scale(1.02);
+}
+
+@mixin heart($opacity: 1, $font-weight: 400, $color: inherit) {
+    display: inline-block;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    font-family: "Font Awesome 5 Free";
+    font-weight: $font-weight; 
+    content: "\f004";
+    color: $color;
+    background-clip: inherit;
+    -webkit-background-clip: text;
+    opacity: $opacity;
+    transition: 300ms ease-in-out;
+    font-size: 2rem;
+    position: absolute;
+    right: 1rem;
+    top: 20%;
+                
+}
+
+@mixin heart-animated {
+    
+
+    font-family: "shrikhand", "sans-serif";
+    position: relative;
+    &::before{
+        @include mixins.heart;
+    }
+
+    &::after{
+        @include mixins.heart($opacity: 0, $font-weight :900, $color: transparent);
+        background-image: colors.$linear-gradiant2;
+        
+    }
+    &:hover::after{
+        opacity: 1;
+        transform: scale(1.11);
+        background-image: colors.$linear-gradiant2;
+    }
+}
+
+@mixin base-button {
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 2rem;
+    background-image: colors.$linear-gradiant;
+    transition: 100ms;
+    margin-top: 1.5rem;
+    @include box-shadow;
+
 }
