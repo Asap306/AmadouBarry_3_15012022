@@ -2,9 +2,9 @@
 @use "../utils/colors.scss";
 @use "../utils/mixins.scss";
 
+
 .menus{
     margin-bottom: 0;
-    padding-bottom: 2rem;
     background-color: colors.$lightergrey;
     h2{
         padding: 2rem 0 0 2rem;
@@ -19,6 +19,7 @@
             grid-template-columns: repeat(1, 1fr);
         }
         margin: 2rem;
+
     }
 
     .new{
@@ -39,7 +40,8 @@
     }
     
     .card{
-
+        @include mixins.box-shadow;
+       
         &__image{
 
             height: 15rem;
@@ -53,7 +55,7 @@
         }
         &__description{
             
-            h3,p {
+            h3,p{
                 margin: 0.5rem;
             }
 

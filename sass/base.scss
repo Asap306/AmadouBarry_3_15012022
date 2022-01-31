@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway&family=Shrikhand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway&family=Roboto:wght@300;400;500&display=swap');
 
-
 *, ::before, ::after{
     box-sizing: border-box;
 }
@@ -9,13 +8,14 @@
 body{
     margin: 0px;
     font-family: "Roboto", sans-serif;
+    display: grid;
 }
 
 main{
     padding: 0 ;
 }
 
-h3, p{
+h4,p{
     margin: 0;
 }
 

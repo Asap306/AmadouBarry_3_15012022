@@ -9,13 +9,20 @@ $tuto-bullet-height : 1rem;
         padding: 2rem 0 0 2rem;
     }
     p{
-        font-size: 1.5rem;
+        margin: auto;
+        font-size: 1.2rem;
         padding: 2%;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        width: 100%;
+        font-weight: bold;
     }
     margin-bottom: 2rem;
     & ol{
         display: flex;
         gap: 2rem;
+        margin-right: 2rem;
         @media (max-width: 1187px){
             flex-direction: column;
         }
@@ -37,14 +44,18 @@ $tuto-bullet-height : 1rem;
             bottom: 30%;
             left: -$tuto-bullet-height;
         }
+        &:hover{
+            background-color: rgba(147, 86, 220, 0.2);
+        }
         list-style-type: none;
         background-color: #f6f6f6;
         padding: 1.2rem 2rem;
         flex-grow: 1;
-        border-radius: 1rem;
+        border-radius: 1.5rem;
         @include mixins.box-shadow;
         &:hover{
             @include mixins.zoom;
+            cursor: pointer;
         }
         & i.fas{
             padding: 2%;
