@@ -379,13 +379,13 @@ footer p {
   animation: appear 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 #page-resto .menus .menus__category:nth-child(2) {
-  animation-delay: 200ms;
-}
-#page-resto .menus .menus__category:nth-child(3) {
   animation-delay: 400ms;
 }
-#page-resto .menus .menus__category:nth-child(2) {
+#page-resto .menus .menus__category:nth-child(3) {
   animation-delay: 600ms;
+}
+#page-resto .menus .menus__category:nth-child(4) {
+  animation-delay: 800ms;
 }
 #page-resto .menus .menus__category .menu-item {
   display: flex;
