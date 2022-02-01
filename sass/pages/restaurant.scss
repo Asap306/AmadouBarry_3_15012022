@@ -91,6 +91,9 @@
             }
               
             .menu-item{
+                &:hover{
+                    cursor: pointer;
+                }
                 display: flex;
                 background-color: white;
                 margin: 0.5rem;

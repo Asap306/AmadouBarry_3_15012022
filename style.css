@@ -132,6 +132,9 @@ header img {
 .tuto li:hover {
   background-color: rgba(147, 86, 220, 0.2);
 }
+.tuto li:hover i.fas {
+  color: #9356dc;
+}
 .tuto li:hover {
   transform: none scale(zoom-level);
   cursor: pointer;
@@ -145,6 +148,7 @@ header img {
 .menus {
   margin-bottom: 0;
   background-color: #f3f3f3;
+  padding-bottom: 1rem;
 }
 .menus h2 {
   padding: 2rem 0 0 2rem;
@@ -267,7 +271,7 @@ footer p {
 
 @keyframes appear {
   0% {
-    transform: translateZ(-1400px) translateY(800px);
+    transform: translateZ(-100px) translateY(100px);
     opacity: 0;
   }
   100% {
@@ -395,6 +399,9 @@ footer p {
   overflow: hidden;
   box-shadow: 1px 1px 8px -2px rgba(0, 0, 0, 0.4);
   animation-fill-mode: both;
+}
+#page-resto .menus .menus__category .menu-item:hover {
+  cursor: pointer;
 }
 #page-resto .menus .menus__category .menu-item .menu-item__description {
   padding: 1rem;

@@ -46,6 +46,9 @@ $tuto-bullet-height : 1rem;
         }
         &:hover{
             background-color: rgba(147, 86, 220, 0.2);
+            & i.fas{
+                color: #9356dc;
+            }
         }
         list-style-type: none;
         background-color: #f6f6f6;
