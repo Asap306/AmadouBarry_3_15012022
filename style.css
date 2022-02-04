@@ -88,10 +88,10 @@ header img {
   height: 100vh;
   inset: 0;
   z-index: 1;
-  animation: disappear 300ms 3s forwards;
+  animation: disappear 300ms 2s forwards;
 }
 .loader i {
-  animation: spin 3s ease-in;
+  animation: spin 2s ease-in;
   color: #9356dc;
 }
 
@@ -252,6 +252,7 @@ header img {
   -webkit-background-clip: text;
   opacity: 1;
   transition: 300ms ease-in-out;
+  transform-origin: "";
   font-size: 2rem;
   right: 1rem;
   top: 20%;
@@ -270,6 +271,7 @@ header img {
   -webkit-background-clip: text;
   opacity: 0;
   transition: 300ms ease-in-out;
+  transform-origin: "";
   font-size: 2rem;
   right: 1rem;
   top: 20%;
@@ -358,6 +360,7 @@ footer p {
   -webkit-background-clip: text;
   opacity: 1;
   transition: 300ms ease-in-out;
+  transform-origin: "";
   font-size: 2rem;
   right: 1rem;
   top: 20%;
@@ -377,6 +380,7 @@ footer p {
   -webkit-background-clip: text;
   opacity: 0;
   transition: 300ms ease-in-out;
+  transform-origin: "";
   font-size: 2rem;
   right: 1rem;
   top: 20%;

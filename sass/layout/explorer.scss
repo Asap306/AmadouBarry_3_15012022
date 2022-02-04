@@ -28,9 +28,9 @@
     height: 100vh;
     inset: 0;
     z-index: 1;
-    animation: disappear 300ms 3s forwards;
+    animation: disappear 300ms 2s forwards;
     i{
-        animation: spin 3s ease-in ;
+        animation: spin 2s ease-in ;
         color: #9356dc;
     }
 }

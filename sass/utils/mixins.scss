@@ -26,6 +26,7 @@
     -webkit-background-clip: text;
     opacity: $opacity;
     transition: 300ms ease-in-out;
+    transform-origin: "";
     font-size: 2rem;
     right: 1rem;
     top: 20%;
@@ -44,12 +45,5 @@
     margin-top: 1.5rem;
     @include box-shadow;
 
-}
-@mixin name {
-    
-    font-weight: 400;
-    border-bottom: 0.25rem solid #99e2d0;
-    width: 3rem;
-    padding-bottom: 0.4rem;
 }
 
