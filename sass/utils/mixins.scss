@@ -22,6 +22,7 @@
     font-weight: $font-weight;
 }
 
+
 @mixin heart($opacity: 1, $font-weight: 400, $color: inherit) {
     @include font-awesome($font-weight);
     content: "\f004";
@@ -49,3 +50,5 @@
     @include box-shadow;
 
 }
+
+
