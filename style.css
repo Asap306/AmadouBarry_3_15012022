@@ -140,6 +140,7 @@ header img {
 .tuto li {
   display: flex;
   position: relative;
+  counter-increment: list;
   list-style-type: none;
   background-color: #f6f6f6;
   padding: 1.2rem 2rem;
@@ -148,8 +149,7 @@ header img {
   box-shadow: 1px 1px 8px -2px rgba(0, 0, 0, 0.4);
 }
 .tuto li::before {
-  content: counter(steps);
-  counter-increment: steps;
+  content: counter(list);
   color: white;
   background-color: #9356dc;
   width: 2rem;
@@ -168,7 +168,6 @@ header img {
   color: #9356dc;
 }
 .tuto li:hover {
-  transform: none scale(zoom-level);
   cursor: pointer;
 }
 .tuto li i.fas {
@@ -197,7 +196,6 @@ header img {
   }
 }
 .menus .new {
-  border: "";
   position: relative;
 }
 .menus .new::before {
@@ -252,7 +250,6 @@ header img {
   -webkit-background-clip: text;
   opacity: 1;
   transition: 300ms ease-in-out;
-  transform-origin: "";
   font-size: 2rem;
   right: 1rem;
   top: 20%;
@@ -271,7 +268,6 @@ header img {
   -webkit-background-clip: text;
   opacity: 0;
   transition: 300ms ease-in-out;
-  transform-origin: "";
   font-size: 2rem;
   right: 1rem;
   top: 20%;
@@ -315,7 +311,7 @@ footer p {
   }
 }
 #page-resto header a:hover::before {
-  transform: none scale(zoom-level);
+  transform: scale(1.2);
 }
 #page-resto header a::before {
   display: inline-block;
@@ -360,7 +356,6 @@ footer p {
   -webkit-background-clip: text;
   opacity: 1;
   transition: 300ms ease-in-out;
-  transform-origin: "";
   font-size: 2rem;
   right: 1rem;
   top: 20%;
@@ -380,7 +375,6 @@ footer p {
   -webkit-background-clip: text;
   opacity: 0;
   transition: 300ms ease-in-out;
-  transform-origin: "";
   font-size: 2rem;
   right: 1rem;
   top: 20%;
@@ -485,7 +479,7 @@ footer p {
   place-items: center;
   color: #99e2d0;
   background-color: white;
-  aspect-ratio: 1;
+  height: 2rem;
   width: 2rem;
   border-radius: 1rem;
 }

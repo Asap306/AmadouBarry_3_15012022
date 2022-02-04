@@ -30,9 +30,9 @@ $tuto-bullet-height : 1rem;
     & li{
         display: flex;
         position: relative;
+        counter-increment: list;
         &::before{
-            content: counter(steps);
-            counter-increment: steps;
+            content: counter(list);
             color: white;
             background-color: colors.$purple;
             width: 2 * $tuto-bullet-height;
@@ -57,7 +57,6 @@ $tuto-bullet-height : 1rem;
         border-radius: 1.5rem;
         @include mixins.box-shadow;
         &:hover{
-            @include mixins.zoom;
             cursor: pointer;
         }
         & i.fas{
