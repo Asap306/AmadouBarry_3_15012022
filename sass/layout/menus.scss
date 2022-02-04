@@ -46,7 +46,7 @@
     }
     @for $i from 1 through 4 {
       &__image-#{$i} {
-        background-image: url("C:/Users/Amadou/OneDrive/Bureau/Oh_My_Food/images/menu_#{$i}.jpg");
+        background-image: url("./images/menu_#{$i}.jpg");
       }
     }
     &__description {

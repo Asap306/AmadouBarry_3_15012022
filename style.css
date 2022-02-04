@@ -163,6 +163,7 @@ header img {
 }
 .tuto li:hover {
   background-color: rgba(147, 86, 220, 0.2);
+  box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.5);
 }
 .tuto li:hover i.fas {
   color: #9356dc;
@@ -218,16 +219,16 @@ header img {
   border-radius: 1rem 1rem 0 0;
 }
 .menus .card__image-1 {
-  background-image: url("C:/Users/Amadou/OneDrive/Bureau/Oh_My_Food/images/menu_1.jpg");
+  background-image: url("./images/menu_1.jpg");
 }
 .menus .card__image-2 {
-  background-image: url("C:/Users/Amadou/OneDrive/Bureau/Oh_My_Food/images/menu_2.jpg");
+  background-image: url("./images/menu_2.jpg");
 }
 .menus .card__image-3 {
-  background-image: url("C:/Users/Amadou/OneDrive/Bureau/Oh_My_Food/images/menu_3.jpg");
+  background-image: url("./images/menu_3.jpg");
 }
 .menus .card__image-4 {
-  background-image: url("C:/Users/Amadou/OneDrive/Bureau/Oh_My_Food/images/menu_4.jpg");
+  background-image: url("./images/menu_4.jpg");
 }
 .menus .card__description {
   position: relative;
