@@ -46,4 +46,11 @@
     @include box-shadow;
 
 }
-
+@mixin name {
+    
+    @for $i from 1 through 4 {
+        &__image-#{$i} {
+            background-image: url("../../images/menu_#{$i}.jpg");
+        }
+    }
+}
