@@ -32,27 +32,6 @@
                 
 }
 
-@mixin heart-animated {
-    
-
-    font-family: "shrikhand", "sans-serif";
-    position: relative;
-    &::before{
-        @include mixins.heart;
-    }
-
-    &::after{
-        @include mixins.heart($opacity: 0, $font-weight :900, $color: transparent);
-        background-image: colors.$linear-gradiant2;
-        
-    }
-    &:hover::after{
-        opacity: 1;
-        transform: scale(1.11);
-        background-image: colors.$linear-gradiant2;
-    }
-}
-
 @mixin base-button {
     color: white;
     font-weight: bold;
@@ -65,5 +44,12 @@
     margin-top: 1.5rem;
     @include box-shadow;
 
+}
+@mixin name {
+    
+    font-weight: 400;
+    border-bottom: 0.25rem solid #99e2d0;
+    width: 3rem;
+    padding-bottom: 0.4rem;
 }
 

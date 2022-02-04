@@ -79,6 +79,38 @@ header img {
   cursor: pointer;
 }
 
+.loader {
+  position: fixed;
+  display: grid;
+  place-items: center;
+  background-color: #ffffff;
+  opacity: 0.9;
+  height: 100vh;
+  inset: 0;
+  z-index: 1;
+  animation: disappear 300ms 3s forwards;
+}
+.loader i {
+  animation: spin 3s ease-in;
+  color: #9356dc;
+}
+
+@keyframes disappear {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0);
+  }
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 .tuto {
   margin-bottom: 2rem;
 }
@@ -202,10 +234,11 @@ header img {
 .menus .card__description {
   position: relative;
 }
-.menus .card__description h3, .menus .card__description p {
+.menus .card__description h3,
+.menus .card__description p {
   margin: 0.5rem;
 }
-.menus .card__description::before {
+.menus .card__description .heart::before {
   display: inline-block;
   position: absolute;
   font-variant: normal;
@@ -223,7 +256,7 @@ header img {
   right: 1rem;
   top: 20%;
 }
-.menus .card__description::after {
+.menus .card__description .heart::after {
   display: inline-block;
   position: absolute;
   font-variant: normal;
@@ -242,7 +275,7 @@ header img {
   top: 20%;
   background-image: linear-gradient(to top, #9356dc, #ff79da);
 }
-.menus .card__description:hover::after {
+.menus .card__description .heart:hover::after {
   opacity: 1;
   transform: scale(1.11);
   background-image: linear-gradient(to top, #9356dc, #ff79da);
@@ -311,12 +344,7 @@ footer p {
   height: 8rem;
   position: relative;
 }
-#page-resto .resto1 h2 {
-  margin-left: 2rem;
-  font-family: "shrikhand", "sans-serif";
-  position: relative;
-}
-#page-resto .resto1 h2::before {
+#page-resto .resto1 .heart::before {
   display: inline-block;
   position: absolute;
   font-variant: normal;
@@ -333,8 +361,9 @@ footer p {
   font-size: 2rem;
   right: 1rem;
   top: 20%;
+  margin: 1.6rem 2rem 0 0;
 }
-#page-resto .resto1 h2::after {
+#page-resto .resto1 .heart::after {
   display: inline-block;
   position: absolute;
   font-variant: normal;
@@ -352,17 +381,25 @@ footer p {
   right: 1rem;
   top: 20%;
   background-image: linear-gradient(to top, #9356dc, #ff79da);
+  margin: 1.6rem 2rem 0 0;
 }
-#page-resto .resto1 h2:hover::after {
+#page-resto .resto1 .heart:hover::after {
   opacity: 1;
   transform: scale(1.11);
   background-image: linear-gradient(to top, #9356dc, #ff79da);
+  cursor: pointer;
+}
+#page-resto .resto1 h2 {
+  margin-left: 2rem;
+  font-family: "shrikhand", "sans-serif";
+  position: relative;
 }
 #page-resto .resto-main {
   background-color: #f3f3f3;
   padding: 0 1rem;
 }
 #page-resto .resto-main h3 {
+  font-weight: 400;
   font-weight: 400;
   border-bottom: 0.25rem solid #99e2d0;
   width: 3rem;
@@ -382,14 +419,24 @@ footer p {
   overflow: hidden;
   animation: appear 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
-#page-resto .menus .menus__category:nth-child(2) {
+#page-resto .menus .menus__category.child-1 {
+  animation-delay: 200ms;
+}
+#page-resto .menus .menus__category.child-2 {
   animation-delay: 400ms;
 }
-#page-resto .menus .menus__category:nth-child(3) {
+@media (min-width: 944px) {
+  #page-resto .menus .menus__category.child-2 {
+    padding-top: 3.9rem;
+  }
+}
+#page-resto .menus .menus__category.child-3 {
   animation-delay: 600ms;
 }
-#page-resto .menus .menus__category:nth-child(4) {
-  animation-delay: 800ms;
+@media (min-width: 944px) {
+  #page-resto .menus .menus__category.child-3 {
+    padding-top: 3.9rem;
+  }
 }
 #page-resto .menus .menus__category .menu-item {
   display: flex;
@@ -407,7 +454,8 @@ footer p {
   padding: 1rem;
   overflow: hidden;
 }
-#page-resto .menus .menus__category .menu-item .menu-item__description h4, #page-resto .menus .menus__category .menu-item .menu-item__description p {
+#page-resto .menus .menus__category .menu-item .menu-item__description h4,
+#page-resto .menus .menus__category .menu-item .menu-item__description p {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
